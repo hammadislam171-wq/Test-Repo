@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Employee Registration Form</title>
+</head>
+<body>
+    <h2>Employee Registration Form</h2>
+    <form action="/submit_employee" method="post">
+        <label for="empid">Employee ID:</label><br>
+        <input type="text" id="empid" name="empid" required><br><br>
+
+        <label for="fname">First Name:</label><br>
+        <input type="text" id="fname" name="fname" required><br><br>
+
+        <label for="lname">Last Name:</label><br>
+        <input type="text" id="lname" name="lname" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="phone">Phone Number:</label><br>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required><br><br>
+
+        <label for="department">Department:</label><br>
+        <select id="department" name="department" required>
+            <option value="hr">Human Resources</option>
+            <option value="it">IT</option>
+            <option value="finance">Finance</option>
+            <option value="marketing">Marketing</option>
+        </select><br><br>
+
+        <label for="designation">Designation:</label><br>
+        <input type="text" id="designation" name="designation" required><br><br>
+
+        <label for="dob">Date of Birth:</label><br>
+        <input type="date" id="dob" name="dob" required><br><br>
+
+        <label for="gender">Gender:</label><br>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br><br>
+
+        <label for="address">Address:</label><br>
+        <textarea id="address" name="address" rows="3" cols="30"></textarea><br><br>
+
+        <input type="submit" value="Register Employee">
+    </form>
+</body>
+</html>
